@@ -7,6 +7,7 @@ resource "aws_security_group_rule" "mongodb_bastion" {
   to_port           = 22
 }
 
+
 # resource "aws_security_group_rule" "mongodb_catalogue" {
 #   type              = "ingress"
 #   security_group_id = local.mongodb_sg_id
