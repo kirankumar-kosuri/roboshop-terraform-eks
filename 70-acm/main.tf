@@ -8,7 +8,6 @@ resource "aws_acm_certificate" "roboshop" {
         Name = local.common_name_suffix
     }
   )
-
   lifecycle {
     create_before_destroy = true
   }
