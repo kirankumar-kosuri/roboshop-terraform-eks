@@ -31,7 +31,7 @@ module "eks" {
   node_security_group_id = local.eks_node_sg_id
   security_group_id = local.eks_control_plane_sg_id
 
-  # EKS Managed Node Group(s)
+# EKS Managed Node Group(s)
   eks_managed_node_groups = {
 #     blue = {
 #       # Starting on 1.30, AL2023 is the default AMI type for EKS managed node groups
