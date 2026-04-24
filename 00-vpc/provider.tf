@@ -5,7 +5,6 @@ terraform {
       version = "6.16.0"
     }
   }
-
   backend "s3" {
     bucket = "roboshop-dev-86s"
     key    = "roboshop-dev-vpc"
@@ -14,7 +13,6 @@ terraform {
     encrypt = true
   }
 }
-
 provider "aws" {
   region = "us-east-1"
 }
